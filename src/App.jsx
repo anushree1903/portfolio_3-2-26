@@ -370,43 +370,33 @@ export default function AnushreePortfolio() {
         .stagger-9 { animation-delay: 0.9s; }
       `}</style>
 
-      {/* Navigation */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-        <div className={`flex items-center gap-1 p-1.5 rounded-full transition-all duration-500 ${
-          isScrolled 
-            ? 'bg-white/95 backdrop-blur-xl border border-gray-200 shadow-lg' 
-            : 'bg-white/80 backdrop-blur-md border border-gray-200'
-        }`}>
-          <button
-            onClick={() => scrollToSection('home')}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-900 text-white font-medium text-sm transition-all duration-300"
-          >
-            <Home size={16} />
-            <span>Home</span>
-          </button>
-          <button
-            onClick={() => scrollToSection('about')}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full text-gray-600 hover:text-gray-900 hover:bg-gray-100 font-medium text-sm transition-all duration-300"
-          >
-            <User size={16} />
-            <span>About</span>
-          </button>
-          <button
-            onClick={() => scrollToSection('work')}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full text-gray-600 hover:text-gray-900 hover:bg-gray-100 font-medium text-sm transition-all duration-300"
-          >
-            <Briefcase size={16} />
-            <span>Works</span>
-          </button>
-          <button
-            onClick={() => scrollToSection('contact')}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full text-gray-600 hover:text-gray-900 hover:bg-gray-100 font-medium text-sm transition-all duration-300"
-          >
-            <Zap size={16} />
-            <span>Contact</span>
-          </button>
-        </div>
-      </nav>
+<nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+  <div
+    className={`flex items-center gap-1 p-1.5 rounded-full transition-all duration-500 ${
+      isScrolled
+        ? 'bg-white/95 backdrop-blur-xl border border-gray-200 shadow-lg'
+        : 'bg-white/80 backdrop-blur-md border border-gray-200'
+    }`}
+  >
+    {[
+      { id: 'home', label: 'Home', icon: Home },
+      { id: 'about', label: 'About', icon: User },
+      { id: 'work', label: 'Works', icon: Briefcase },
+      { id: 'contact', label: 'Contact', icon: Zap },
+    ].map(({ id, label, icon: Icon }) => (
+      <button
+        key={id}
+        onClick={() => scrollToSection(id)}
+        className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-all"
+      >
+        <Icon size={16} />
+        <span className="hidden sm:inline">{label}</span>
+      </button>
+    ))}
+  </div>
+</nav>
+
+
 
       {/* Hero Section */}
 <section
