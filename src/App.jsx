@@ -204,20 +204,20 @@ export default function AnushreePortfolio() {
     link: 'https://www.behance.net/gallery/239272143/KindRoute-UIUX-Case-Study-for-Navigation-App'
   },
   {
-    image: '/projects/student-dashboard.png',
-    title: 'Student Dashboard – BrightCHAMPS',
+    image: '/src/assets/elearning.png',
+    title: 'E-Learning Platform',
     tags: ['UI Design', '2024', 'Dashboard'],
     description:
-      'User-friendly dashboard interface for K-12 students, improving task efficiency by 20% and enhancing engagement by 25%.',
-    link: 'https://www.behance.net/your-student-dashboard-project'
+      'E-learning is a clean and intuitive online learning platform designed to make accessing courses and learning content easy and engaging.',
+    link: 'https://www.behance.net/gallery/203785451/E-Learning-Website'
   },
   {
-    image: '/projects/iot-dashboard.png',
-    title: 'IoT Device Management Dashboard',
+    image: '/src/assets/Nurse.png',
+    title: 'Nurse Management',
     tags: ['UX Design', '2023', 'Dashboard'],
     description:
-      'Comprehensive dashboard design improving UX by 30% through user-centered design, streamlined workflows, and data visualizations.',
-    link: 'https://www.behance.net/your-iot-project'
+      'A nurse management system designed to efficiently add, edit, and delete nurse records. The interface focuses on clarity, ease of use, and streamlined workflows to support smooth healthcare operations',
+    link: 'https://www.behance.net/gallery/243515335/Nurse-Management-System'
   }
 ];
 
@@ -455,7 +455,7 @@ export default function AnushreePortfolio() {
         }`}
       >
         <a
-          href="/resume.pdf"
+          href="/public/anushree-4-2-26.pdf"
           download="Anushree_Resume.pdf"
           className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 inline-flex items-center gap-2"
         >
@@ -841,7 +841,7 @@ export default function AnushreePortfolio() {
             </a>
           </div>
           <div className="text-center text-gray-500 text-sm">
-            <p className="mb-1">© 2025 Anushree H. All rights reserved.</p>
+            <p className="mb-1">© 2026 Anushree H. All rights reserved.</p>
             <p>UI/UX & Graphic Designer | Bangalore, Karnataka, India</p>
           </div>
         </div>
