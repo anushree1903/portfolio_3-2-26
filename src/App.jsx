@@ -449,7 +449,7 @@ export default function AnushreePortfolio() {
         }`}
       >
         <a
-          href="/public/anushree.pdf"
+  href="https://drive.google.com/file/d/1CffbQJ1aM5lfknBYCIFOIcYdbfQtVrXO/view?usp=sharing"
           download="Anushree_Resume.pdf"
           className="px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 inline-flex items-center gap-2"
         >
