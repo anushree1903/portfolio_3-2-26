@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Home, User, Briefcase, Zap } from 'lucide-react';
 import heroBg from './assets/hero-bg.png';
+import hearme from './assets/HearMe.png';
+import kindroute from './assets/kindroute.png';
+import elearning from './assets/elearning.png';
+import nures from './assets/Nurse.png';
 
 export default function AnushreePortfolio() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -188,7 +192,7 @@ export default function AnushreePortfolio() {
 
  const projects = [
   {
-    image: '/src/assets/HearMe.png', // add image path
+    image: hearme, // add image path
     title: 'HearMe – Inclusive Communication App',
     tags: ['UX Case Study', '2025', 'Mobile App'],
     description:
@@ -196,7 +200,7 @@ export default function AnushreePortfolio() {
     link: 'https://www.behance.net/gallery/239109907/HearMe-UIUX-Case-Study-Inclusive-Communication-App'
   },
   {
-    image: '/src/assets/kindroute.png',
+    image: kindroute,
     title: 'KindRoute – Safety-First Navigation Experience',
     tags: ['UI/UX', '2025', 'Web'],
     description:
@@ -204,7 +208,7 @@ export default function AnushreePortfolio() {
     link: 'https://www.behance.net/gallery/239272143/KindRoute-UIUX-Case-Study-for-Navigation-App'
   },
   {
-    image: '/src/assets/elearning.png',
+    image: elearning,
     title: 'E-Learning Platform',
     tags: ['UI Design', '2024', 'Dashboard'],
     description:
@@ -212,7 +216,7 @@ export default function AnushreePortfolio() {
     link: 'https://www.behance.net/gallery/203785451/E-Learning-Website'
   },
   {
-    image: '/src/assets/Nurse.png',
+    image: nures,
     title: 'Nurse Management',
     tags: ['UX Design', '2023', 'Dashboard'],
     description:
